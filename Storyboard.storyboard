@@ -68,6 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="q8p-8g-5Vi"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNt-bV-VNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
