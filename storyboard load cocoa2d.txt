@@ -1,0 +1,34 @@
+  [super viewDidLoad];
+    listOfData = [[NSMutableArray alloc] init];
+    listOfNameID = [[NSMutableArray alloc] init];
+	// Do any additional setup after loading the view.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docsPath = [paths objectAtIndex:0];
+    NSString *path = [docsPath stringByAppendingPathComponent:@"FlashCardsDB.sqlite"];
+    NSLog(@"Path: %@",path);
+    FMDatabase *database = [FMDatabase databaseWithPath:path];
+    [database open];
+    [database beginTransaction];
+      NSLog(@"Path: %@",@"OPenEd DB");
+	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
+    FMResultSet *results = [database executeQuery:@"select * from FlashName"];
+    while([results next]) {
+        NSString *Nameid = [results stringForColumn:@"NameID"] ;
+        NSString *title = [results stringForColumn:@"title"] ;
+        NSString *StrTitles =  [NSString stringWithFormat:@"ID:%@  --- %@", Nameid, title];
+        NSLog(@"Titles: %@",StrTitles);
+        [listOfNameID addObject:Nameid];
+        [listOfData addObject:StrTitles];
+
+    }
+    [results close]; //VERY IMPORTANT!
+      [database commit];
+    [database close];
+     NSLog(@"Closed: %@",@"DBClosed");
+    	// Do any additional setup after loading the view.
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
