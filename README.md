@@ -1,8 +1,13 @@
-Cocos2DSimpleGame
+Storyboard launch Cocos2D Game
 =================
 
 Game Tutorial
 
-This game tutorial teaches you how to create a simple Cocoa2D Game.
+This game tutorial teaches you how to add a storyboard as a launch for your Cocoa2d Game 
 
-Follow instructions @ http://www.raywenderlich.com/25736/how-to-make-a-simple-iphone-game-with-cocos2d-2-x-tutorial
+Podcast: 
+http://youtu.be/Uxt9UhBPd6U
+
+Step by Step: 
+Read "StoryBoard Viewer for 2dGame.docx" 
+see https://github.com/ioscourse/StoryBoard-Connect-Cocos2DSimpleGame/blob/master/StoryBoard%20Viewer%20for%202dGame.docx
