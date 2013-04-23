@@ -9,7 +9,6 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="zCr-Ek-LSk" sceneMemberID="viewController">
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ps0-5I-0Ug">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -19,19 +18,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHw-bZ-fpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-764" y="-959"/>
+            <point key="canvasLocation" x="-1056" y="-1094"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - RVC Student App-->
         <scene sceneID="QYq-nN-agS">
             <objects>
                 <viewController id="1D5-k6-aUh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UpV-9l-iIA">
-                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzu-mk-WOV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="1ty-1g-LZW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Show Game">
+                                <state key="normal" title="Play">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,39 +44,126 @@
                                     <segue destination="uwe-1L-Frh" kind="push" id="lMH-Vp-tSw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shoot Em' Up Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fio-MQ-p71">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="426" id="085-bf-YvE"/>
+                                    <constraint firstAttribute="height" constant="46" id="ehZ-YE-JiS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Screen Shot 2013-04-23 at 8.46.47 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQZ-ME-AL5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="DR4-vS-0uX"/>
+                                    <constraint firstAttribute="height" constant="135" id="gIJ-LH-Dfd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pz-16-56x">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jQA-YV-Ver" kind="push" id="w56-OK-VnO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wzu-mk-WOV" firstAttribute="leading" secondItem="UpV-9l-iIA" secondAttribute="leading" constant="194" id="LZQ-Ah-kA4"/>
-                            <constraint firstItem="Wzu-mk-WOV" firstAttribute="top" secondItem="UpV-9l-iIA" secondAttribute="top" constant="91" id="ztN-go-I99"/>
+                            <constraint firstItem="Wzu-mk-WOV" firstAttribute="centerX" secondItem="UpV-9l-iIA" secondAttribute="centerX" type="default" id="Dpj-b7-Baq"/>
+                            <constraint firstItem="fio-MQ-p71" firstAttribute="top" secondItem="UpV-9l-iIA" secondAttribute="top" type="default" id="JMf-f0-pao"/>
+                            <constraint firstAttribute="bottom" secondItem="Wzu-mk-WOV" secondAttribute="bottom" constant="31" id="WiW-Da-rxv"/>
+                            <constraint firstItem="Wzu-mk-WOV" firstAttribute="leading" secondItem="rQZ-ME-AL5" secondAttribute="leading" type="default" id="XAg-eI-zFj"/>
+                            <constraint firstItem="rQZ-ME-AL5" firstAttribute="centerX" secondItem="fio-MQ-p71" secondAttribute="centerX" type="default" id="YXu-wG-YxH"/>
+                            <constraint firstItem="Wzu-mk-WOV" firstAttribute="trailing" secondItem="rQZ-ME-AL5" secondAttribute="trailing" type="default" id="jxa-TX-fwp"/>
+                            <constraint firstItem="0Pz-16-56x" firstAttribute="centerX" secondItem="Wzu-mk-WOV" secondAttribute="centerX" type="default" id="uIK-me-Cks"/>
+                            <constraint firstAttribute="bottom" secondItem="0Pz-16-56x" secondAttribute="bottom" constant="6" id="zVl-XM-XP6"/>
+                            <constraint firstItem="rQZ-ME-AL5" firstAttribute="top" secondItem="UpV-9l-iIA" secondAttribute="top" constant="59" id="zp6-aU-oWS"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1yD-lT-grG"/>
+                    <navigationItem key="navigationItem" title="RVC Student App" id="1yD-lT-grG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZh-1e-tYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-747" y="-521"/>
+            <point key="canvasLocation" x="-1045" y="-656"/>
+        </scene>
+        <!--View Controller - How to Play-->
+        <scene sceneID="oXh-39-t9L">
+            <objects>
+                <viewController id="jQA-YV-Ver" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="leO-fc-8yL">
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shoot em' up Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Id-gg-FAb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="426" id="QcV-1v-Dbk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6NM-iq-Nx0">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="6jh-Pv-Ggy"/>
+                                    <constraint firstAttribute="height" constant="174" id="xY3-Aa-0N2"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">1) Click the "Play" button 2) Tap screen with finger to shoot objects 3) You win if you shoot all objects 4) You lose if one of the objects hits the left wall </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6NM-iq-Nx0" firstAttribute="top" secondItem="2Id-gg-FAb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5eI-Kk-iGK"/>
+                            <constraint firstAttribute="trailing" secondItem="2Id-gg-FAb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6Ku-eJ-msK"/>
+                            <constraint firstItem="6NM-iq-Nx0" firstAttribute="centerX" secondItem="leO-fc-8yL" secondAttribute="centerX" type="default" id="84T-FI-WBS"/>
+                            <constraint firstItem="2Id-gg-FAb" firstAttribute="top" secondItem="leO-fc-8yL" secondAttribute="top" constant="8" id="NZw-uc-4wN"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="How to Play" id="bI7-u7-Xnk"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izD-HJ-e7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321" y="-674"/>
         </scene>
         <!--Cocos View Controller-->
         <scene sceneID="faT-g4-k2N">
             <objects>
                 <viewController id="uwe-1L-Frh" customClass="CocosViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxI-Db-TSe">
-                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="q8p-8g-5Vi"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNt-bV-VNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="-528"/>
+            <point key="canvasLocation" x="-343" y="-1094"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2013-04-23 at 8.46.47 AM.png" width="514" height="354"/>
+    </resources>
     <classes>
         <class className="CocosViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CocosViewController.h"/>

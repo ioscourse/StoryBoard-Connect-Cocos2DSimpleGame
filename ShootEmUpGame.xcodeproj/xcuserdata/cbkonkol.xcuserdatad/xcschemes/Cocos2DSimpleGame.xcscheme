@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "127704C716E6A6890022B09D"
                BuildableName = "Cocos2DSimpleGame.app"
-               BlueprintName = "Cocos2DSimpleGame"
-               ReferencedContainer = "container:Cocos2DSimpleGame.xcodeproj">
+               BlueprintName = "ShootEmUpGame"
+               ReferencedContainer = "container:ShootEmUpGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "127704C716E6A6890022B09D"
             BuildableName = "Cocos2DSimpleGame.app"
-            BlueprintName = "Cocos2DSimpleGame"
-            ReferencedContainer = "container:Cocos2DSimpleGame.xcodeproj">
+            BlueprintName = "ShootEmUpGame"
+            ReferencedContainer = "container:ShootEmUpGame.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "127704C716E6A6890022B09D"
             BuildableName = "Cocos2DSimpleGame.app"
-            BlueprintName = "Cocos2DSimpleGame"
-            ReferencedContainer = "container:Cocos2DSimpleGame.xcodeproj">
+            BlueprintName = "ShootEmUpGame"
+            ReferencedContainer = "container:ShootEmUpGame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "127704C716E6A6890022B09D"
             BuildableName = "Cocos2DSimpleGame.app"
-            BlueprintName = "Cocos2DSimpleGame"
-            ReferencedContainer = "container:Cocos2DSimpleGame.xcodeproj">
+            BlueprintName = "ShootEmUpGame"
+            ReferencedContainer = "container:ShootEmUpGame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -14,7 +14,7 @@
 #import "AppDelegate.h"
 
 #pragma mark - HelloWorldLayer
-
+int count;
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
 NSMutableArray * _monsters;
@@ -63,8 +63,13 @@ NSMutableArray * _projectiles;
         // CCCallBlockN in addMonster
         [_monsters removeObject:node];
         [node removeFromParentAndCleanup:YES];
-        CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
-        [[CCDirector sharedDirector] replaceScene:gameOverScene];
+        count++;
+        if (count > 3) {
+            count=0;
+            CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
+            [[CCDirector sharedDirector] replaceScene:gameOverScene];
+        }
+
     }];
     [monster runAction:[CCSequence actions:actionMove, actionMoveDone, nil]];
     monster.tag = 1;

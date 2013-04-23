@@ -23,8 +23,10 @@
         
         NSString * message;
         if (won) {
+            _monstersDestroyed=0;
             message = @"You Won!";
         } else {
+             _monstersDestroyed=0;
             message = @"You Lose :[";
         }
         

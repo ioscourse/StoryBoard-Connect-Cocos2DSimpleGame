@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12052F25172659FC005B3A02 /* CocosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12052F24172659FC005B3A02 /* CocosViewController.m */; };
 		12052F2717265AF4005B3A02 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12052F2617265AF4005B3A02 /* Storyboard.storyboard */; };
+		120B8CEA1726C8BF00AB7C80 /* Screen Shot 2013-04-23 at 8.46.47 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 120B8CE91726C8BF00AB7C80 /* Screen Shot 2013-04-23 at 8.46.47 AM.png */; };
+		120B8CEC1726D8CA00AB7C80 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120B8CEB1726D8CA00AB7C80 /* Default-568h@2x.png */; };
 		127704CC16E6A6890022B09D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127704CB16E6A6890022B09D /* QuartzCore.framework */; };
 		127704CE16E6A6890022B09D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127704CD16E6A6890022B09D /* OpenGLES.framework */; };
 		127704D016E6A6890022B09D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127704CF16E6A6890022B09D /* OpenAL.framework */; };
@@ -150,7 +152,9 @@
 		12052F23172659FC005B3A02 /* CocosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosViewController.h; sourceTree = "<group>"; };
 		12052F24172659FC005B3A02 /* CocosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosViewController.m; sourceTree = "<group>"; };
 		12052F2617265AF4005B3A02 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		127704C816E6A6890022B09D /* Cocos2DSimpleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocos2DSimpleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		120B8CE91726C8BF00AB7C80 /* Screen Shot 2013-04-23 at 8.46.47 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2013-04-23 at 8.46.47 AM.png"; sourceTree = "<group>"; };
+		120B8CEB1726D8CA00AB7C80 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		127704C816E6A6890022B09D /* ShootEmUpGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootEmUpGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127704CB16E6A6890022B09D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		127704CD16E6A6890022B09D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		127704CF16E6A6890022B09D /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -457,6 +461,7 @@
 		127704BF16E6A6890022B09D = {
 			isa = PBXGroup;
 			children = (
+				120B8CEB1726D8CA00AB7C80 /* Default-568h@2x.png */,
 				12052F22172659C9005B3A02 /* cocoaviewer */,
 				1277067616E6AFF30022B09D /* GameOverLayer.h */,
 				1277067716E6AFF30022B09D /* GameOverLayer.m */,
@@ -469,7 +474,7 @@
 		127704C916E6A6890022B09D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				127704C816E6A6890022B09D /* Cocos2DSimpleGame.app */,
+				127704C816E6A6890022B09D /* ShootEmUpGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -874,6 +879,7 @@
 		1277066316E6A7AD0022B09D /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				120B8CE91726C8BF00AB7C80 /* Screen Shot 2013-04-23 at 8.46.47 AM.png */,
 				1277066416E6A7AD0022B09D /* monster-hd.png */,
 				1277066516E6A7AD0022B09D /* monster.png */,
 				1277066616E6A7AD0022B09D /* player-hd.png */,
@@ -896,9 +902,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		127704C716E6A6890022B09D /* Cocos2DSimpleGame */ = {
+		127704C716E6A6890022B09D /* ShootEmUpGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1277066016E6A68B0022B09D /* Build configuration list for PBXNativeTarget "Cocos2DSimpleGame" */;
+			buildConfigurationList = 1277066016E6A68B0022B09D /* Build configuration list for PBXNativeTarget "ShootEmUpGame" */;
 			buildPhases = (
 				127704C416E6A6890022B09D /* Sources */,
 				127704C516E6A6890022B09D /* Frameworks */,
@@ -908,9 +914,9 @@
 			);
 			dependencies = (
 			);
-			name = Cocos2DSimpleGame;
+			name = ShootEmUpGame;
 			productName = Cocos2DSimpleGame;
-			productReference = 127704C816E6A6890022B09D /* Cocos2DSimpleGame.app */;
+			productReference = 127704C816E6A6890022B09D /* ShootEmUpGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -921,7 +927,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = 127704C316E6A6890022B09D /* Build configuration list for PBXProject "Cocos2DSimpleGame" */;
+			buildConfigurationList = 127704C316E6A6890022B09D /* Build configuration list for PBXProject "ShootEmUpGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -933,7 +939,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				127704C716E6A6890022B09D /* Cocos2DSimpleGame */,
+				127704C716E6A6890022B09D /* ShootEmUpGame */,
 			);
 		};
 /* End PBXProject section */
@@ -965,6 +971,8 @@
 				1277067316E6A7AD0022B09D /* background-music-aac.caf in Resources */,
 				1277067416E6A7AD0022B09D /* pew-pew-lei.caf in Resources */,
 				12052F2717265AF4005B3A02 /* Storyboard.storyboard in Resources */,
+				120B8CEA1726C8BF00AB7C80 /* Screen Shot 2013-04-23 at 8.46.47 AM.png in Resources */,
+				120B8CEC1726D8CA00AB7C80 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,11 +1145,12 @@
 				GCC_PREFIX_HEADER = Cocos2DSimpleGame/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Cocos2DSimpleGame/libs/kazmath/include\"";
 				INFOPLIST_FILE = Cocos2DSimpleGame/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ShootEmUpGame;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1155,11 +1164,12 @@
 				GCC_PREFIX_HEADER = Cocos2DSimpleGame/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Cocos2DSimpleGame/libs/kazmath/include\"";
 				INFOPLIST_FILE = Cocos2DSimpleGame/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ShootEmUpGame;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1168,7 +1178,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		127704C316E6A6890022B09D /* Build configuration list for PBXProject "Cocos2DSimpleGame" */ = {
+		127704C316E6A6890022B09D /* Build configuration list for PBXProject "ShootEmUpGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1277065E16E6A68B0022B09D /* Debug */,
@@ -1177,7 +1187,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1277066016E6A68B0022B09D /* Build configuration list for PBXNativeTarget "Cocos2DSimpleGame" */ = {
+		1277066016E6A68B0022B09D /* Build configuration list for PBXNativeTarget "ShootEmUpGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1277066116E6A68B0022B09D /* Debug */,
