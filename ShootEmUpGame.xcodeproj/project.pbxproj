@@ -1145,7 +1145,7 @@
 				GCC_PREFIX_HEADER = Cocos2DSimpleGame/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Cocos2DSimpleGame/libs/kazmath/include\"";
 				INFOPLIST_FILE = Cocos2DSimpleGame/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1164,7 +1164,7 @@
 				GCC_PREFIX_HEADER = Cocos2DSimpleGame/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"Cocos2DSimpleGame/libs/kazmath/include\"";
 				INFOPLIST_FILE = Cocos2DSimpleGame/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",

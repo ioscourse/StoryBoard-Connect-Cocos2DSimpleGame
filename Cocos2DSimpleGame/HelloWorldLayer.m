@@ -41,7 +41,7 @@ NSMutableArray * _projectiles;
     // Determine where to spawn the monster along the Y axis
     CGSize winSize = [CCDirector sharedDirector].winSize;
     int minY = monster.contentSize.height / 2;
-    int maxY = winSize.height - monster.contentSize.height/2;
+    int maxY = (winSize.height -50) - monster.contentSize.height/2;
     int rangeY = maxY - minY;
     int actualY = (arc4random() % rangeY) + minY;
     
@@ -190,7 +190,7 @@ NSMutableArray * _projectiles;
             [_monsters removeObject:monster];
             [self removeChild:monster cleanup:YES];
             _monstersDestroyed++;
-            if (_monstersDestroyed > 30) {
+            if (_monstersDestroyed > 6) {
                 CCScene *gameOverScene = [GameOverLayer sceneWithWon:YES];
                 [[CCDirector sharedDirector] replaceScene:gameOverScene];
             }

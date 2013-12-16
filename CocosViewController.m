@@ -22,7 +22,25 @@
     }
     return self;
 }
-
+- (CGSize)getScreenSize
+{
+    //Get Screen size
+    CGSize size;
+    if (UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) && [[UIScreen mainScreen] bounds].size.height > [[UIScreen mainScreen] bounds].size.width) {
+        // in Landscape mode, width always higher than height
+        size.width = [[UIScreen mainScreen] bounds].size.height;
+        size.height = [[UIScreen mainScreen] bounds].size.width;
+    } else if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation) && [[UIScreen mainScreen] bounds].size.height < [[UIScreen mainScreen] bounds].size.width) {
+        // in Portrait mode, height always higher than width
+        size.width = [[UIScreen mainScreen] bounds].size.height;
+        size.height = [[UIScreen mainScreen] bounds].size.width;
+    } else {
+        // otherwise it is normal
+        size.height = [[UIScreen mainScreen] bounds].size.height;
+        size.width = [[UIScreen mainScreen] bounds].size.width;
+    }
+    return size;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,8 +49,9 @@
     
     if([director isViewLoaded] == NO)
     {
+          CGSize size = [self getScreenSize];
         // Create the OpenGL view that Cocos2D will render to.
-        CCGLView *glView = [CCGLView viewWithFrame:[[[UIApplication sharedApplication] keyWindow] bounds]
+        CCGLView *glView = [CCGLView viewWithFrame:CGRectMake(0, 0, size.width,size.height)
                                        pixelFormat:kEAGLColorFormatRGB565
                                        depthFormat:0
                                 preserveBackbuffer:NO
